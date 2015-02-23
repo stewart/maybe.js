@@ -244,7 +244,7 @@ An empty Maybe.
 
 #### `maybe.lift(fn)`
 
-Wraps a function such that it's return value becomes a Maybe.
+Wraps a function such that its return value becomes a Maybe.
 
 ```javascript
 var stringify = maybe.lift(JSON.stringify)

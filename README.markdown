@@ -4,7 +4,7 @@ This library contains a JS implementation of the [Maybe monad][].
 
 It's a bit more flexible, and comes with a few more extras than the Haskell implementation, given JavaScript's type system limitations and the language's general flexibiity.
 
-[Maybe monad]:
+[Maybe monad]: https://en.wikipedia.org/wiki/Monad_(functional_programming)#The_Maybe_monad
 
 ## Installation
 
@@ -38,6 +38,9 @@ var object = {
 
 var wrapped = maybe(object);
 // => Maybe([object Object])
+
+wrapped.value;
+// => object
 
 wrapped.get("attr");
 // => Maybe(hello)
@@ -95,6 +98,18 @@ maybe(value);
 
 maybe();
 // => Maybe(empty)
+```
+
+#### `maybe(value).value`
+
+Returns the value stored in the Maybe.
+
+```javascript
+maybe("hello").value;
+// => "hello"
+
+maybe().value;
+// => undefined
 ```
 
 #### `maybe(value).get(key)`

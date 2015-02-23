@@ -1,0 +1,14 @@
+{
+  "name": "maybe-js",
+  "version": "0.1.0",
+  "description": "A Maybe monad implementation",
+  "main": "maybe.js",
+  "author": "Andrew Stewart <andrew@stwrt.ca> (http://andrew.stwrt.ca)",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stewart/maybe.js"
+  },
+
+  "license": "MIT"
+}
